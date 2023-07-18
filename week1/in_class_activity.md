@@ -3,35 +3,36 @@
 
 ## Warm-up
 
-Here's a bit of a warm up :
+Here's a bit of a warm-up:
 
-    What will be the output of this code snippet?
-    ```python
-    crazy_list = [1, 2, [3, 4], [5, [100, 200, ['hello']], 23, 11], 1, 7]
-    print(crazy_list[3][1][2][0])
-    ```
-    Think of an answer before you run the code. When you think you know - run the code!
+What will be the output of this code snippet?
+
+```python
+crazy_list = [1, 2, [3, 4], [5, [100, 200, ['hello']], 23, 11], 1, 7]
+print(crazy_list[3][1][2][0])
+```
+Think of an answer before you run the code. When you think you know - run the code!
 
 ## Lists and Tuples
 
 Create a list representing a pack of animals:
 
-    ```python
-    animals = ['Lion', 'Tiger', 'Elephant', 'Giraffe', 'Cheetah']
-    ```
+```python
+animals = ['Lion', 'Tiger', 'Elephant', 'Giraffe', 'Cheetah']
+```
 
 Here is an example of **sequential access**:
 
-    ```python
-    for animal in animals
-        print(animal)
-    ```
+```python
+for animal in animals
+    print(animal)
+```
 
 Here is an example of **random access** (let's get the third animal in the pack):
 
-    ```python
-    print(animals[2])  # Remember Python uses zero-based indexing!
-    ```
+```python
+print(animals[2])  # Remember Python uses zero-based indexing!
+```
 
 ### Challenges
 
@@ -43,25 +44,25 @@ Good!
 
 Now, let's add a 'Zebra' to the pack and remove 'Cheetah':
 
-    ```python
-    animals.append('Zebra')
-    animals.remove('Cheetah')
-    ```
+```python
+animals.append('Zebra')
+animals.remove('Cheetah')
+```
 
 Finally, let's convert this list to a tuple and try to add 'Bear' to the pack:
 
-    ```python
-    animals = tuple(pack_list)
-    # animals.append('Bear')  # Uncommenting this will throw an error because tuples are immutable!
-    ```
+```python
+animals = tuple(pack_list)
+# animals.append('Bear')  # Uncommenting this will throw an error because tuples are immutable!
+```
 
 ## Dictionaries and Sets
 
 We'll convert the animal pack list to a dictionary where the animal is the key and its characteristic is the value:
 
-    ```python
-    animals = {'Lion': 'Brave', 'Tiger': 'Fierce', 'Elephant': 'Large', 'Giraffe': 'Tall', 'Zebra': 'Striped'}
-    ```
+```python
+animals = {'Lion': 'Brave', 'Tiger': 'Fierce', 'Elephant': 'Large', 'Giraffe': 'Tall', 'Zebra': 'Striped'}
+```
 
 ### Challenges 2
 
