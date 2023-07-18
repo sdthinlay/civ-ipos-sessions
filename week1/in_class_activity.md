@@ -66,6 +66,9 @@ animals = {'Lion': 'Brave', 'Tiger': 'Fierce', 'Elephant': 'Large', 'Giraffe': '
 
 ### Challenges 2
 
+Build a list of characteristics and a list of animals, and then use the two lists to create a dictionary of animals and their characteristic.
+Try using `zip`; try using a list comprehension. 
+
 Let's modify the characteristic of 'Lion' to 'King':
 
     animals['Lion'] = 'King'
