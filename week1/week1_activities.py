@@ -34,6 +34,7 @@ animals.remove('Cheetah')
 
 animals = tuple(animals)
 # animals.append('Bear')  # Uncommenting this will throw an error because tuples are immutable!
+#                           (actually, it's because tuples don't have an append method because they are immutable)
 
 animals_dict = {'Lion': 'Brave',
            'Tiger': 'Fierce',
