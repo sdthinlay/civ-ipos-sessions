@@ -24,7 +24,7 @@ animals = ['Lion', 'Tiger', 'Elephant', 'Giraffe', 'Cheetah']
 Here is an example of **sequential access**:
 
 ```python
-for animal in animals
+for animal in animals:
     print(animal)
 ```
 
@@ -52,7 +52,7 @@ animals.remove('Cheetah')
 Finally, let's convert this list to a tuple and try to add 'Bear' to the pack:
 
 ```python
-animals = tuple(pack_list)
+animals = tuple(animals)
 # animals.append('Bear')  # Uncommenting this will throw an error because tuples are immutable!
 ```
 
