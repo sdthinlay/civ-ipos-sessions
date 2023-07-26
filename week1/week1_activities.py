@@ -36,10 +36,10 @@ animals = tuple(animals)
 # animals.append('Bear')  # Uncommenting this will throw an error because tuples are immutable!
 
 animals_dict = {'Lion': 'Brave',
-           'Tiger': 'Fierce',
-           'Elephant': 'Large',
-           'Giraffe': 'Tall',
-           'Zebra': 'Striped'}
+               'Tiger': 'Fierce',
+               'Elephant': 'Large',
+               'Giraffe': 'Tall',
+               'Zebra': 'Striped'}
 
 animal_names = []
 for name in animals_dict:
