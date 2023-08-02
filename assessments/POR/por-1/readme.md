@@ -13,3 +13,6 @@ For portfolio activity 1, you will answer, in your own words, the following ques
 - Modular programming approaches
 - User-defined data structures
   
+## Knowledge questions
+
+In your own words, answer the following questions
