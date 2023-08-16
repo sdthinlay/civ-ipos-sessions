@@ -1,80 +1,34 @@
+class GameLogic:
+    def check_win_chance(self, board):
+        reversed_board = list(zip(*board))
+        for row in board:
+            horizontal_win = set(row)
+            if len(horizontal_win) == 1 and " " not in horizontal_win:
+                #   print("Player", horizontal_win.pop, "wins")
+                return horizontal_win.pop()
+        for row in reversed_board:
+            reversed_horizontal_win = set(row)
+            if len(reversed_horizontal_win) == 1 and " " not in reversed_horizontal_win:
+                # print("Player", reversed_horizontal_win.pop, "wins")
+                return reversed_horizontal_win.pop()
 
-class Tictactoe:
-    def __init__(self):
-        self.empty = " "
-        self.rows = 3
-        self.columns = 3
-        self.board = [[self.empty for _ in range(self.rows)] for _ in range(self.columns)]
-        self.p1 = "X"
-        self.p2 = "O"
-        self.current_player = self.p1
+        main_diagonal = [board[i][i] for i in range(len(board))]
+        diagonal_win = set(main_diagonal)
+        if len(diagonal_win) == 1 and " " not in diagonal_win:
+            # print("Player", diagonal_win.pop,"wins")
+            return diagonal_win.pop()
 
-        
-    def show_board(self):
-        for row in self.board:
-            print(" | ".join(row))
-            print("__________")
+        anti_diagonal = [board[i][len(board) - 1 - i] for i in range(len(board))]
+        anti_diagonal_win = set(anti_diagonal)
+        if len(anti_diagonal_win) == 1 and " " not in anti_diagonal:
+            # print("Player", anti_diagonal_win.pop(),"wins")
+            return anti_diagonal_win.pop()
+        return False
 
-    def check_win_chances(self):
-        win_chances = [
-            [(0, 0), (0, 1), (0, 2)],  # Top row
-            [(1, 0), (1, 1), (1, 2)],  # Middle row
-            [(2, 0), (2, 1), (2, 2)],  # Bottom row
-            [(0, 0), (1, 0), (2, 0)],  # Left column
-            [(0, 1), (1, 1), (2, 1)],  # Middle column
-            [(0, 2), (1, 2), (2, 2)],  # Right column
-            [(0, 0), (1, 1), (2, 2)],  # Diagonal from top-left to bottom-right
-            [(0, 2), (1, 1), (2, 0)],  # Diagonal from top-right to bottom-left
-        ]
-        for win in win_chances:
-            cells = [self.board[row][col] for row, col in win]
-            if len(set(cells)) == 1 and cells[0] != self.empty:
-                return True, cells[0]
-            else:
-                return False, None
-
-    def check_tie(self):
-        for row in self.board:
-            if self.empty in row:
+    def check_tie(self, board):
+        for row in board:
+            if " " in row:
                 return False
         print("It is a tie.")
         return True
 
-    def game_play(self):
-        while True:
-            self.show_board()
-            move = input(f"Enter for player {self.current_player}(0-8):")
-
-            try:
-
-                if move.isdigit():
-                    move = int(move)
-                    row = move // self.rows
-                    col = move % self.columns
-
-                    if 0 <= row < self.rows and 0 <= col < self.columns and self.board[row][col] == self.empty:
-                        self.board[row][col] = self.current_player
-
-                        if self.current_player == self.p1:
-                            self.current_player = self.p2
-                        else:
-                            self.current_player = self.p2
-
-                        win, winner = self.check_win_chances()
-                        print("win:" ,win)
-                        print("winner:" ,winner)
-                        if win:
-                            self.show_board()
-                            print(f"Player {winner} wins!!!")
-                            break
-
-                        if self.check_tie():
-                            self.show_board()
-                            break
-
-                    else:
-                        print("Invalid move, try again!")
-                else:
-                    print("Invalid move, Please enter a number between 0-8")
-            except ValueError:
-                print("Invalid input. Please enter a valid number between 0-8")
