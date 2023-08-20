@@ -5,6 +5,7 @@ How do we move backwards in the file?'''
 # Create the file we will work with, try:
 # remove encoding and see what happens
 # remove encoding and the emojis and see what happens
+# NOTE: the behaviour here is different on Windows and non-Windows platforms!
 with open("my_new_file", "w", encoding='utf-8') as f:
     f.write("Hello😊😊\nWorld")
 
