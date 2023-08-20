@@ -1,5 +1,6 @@
 import numpy as np
 from PIL import Image
+# you will need to pip install pillow and numpy to use this class...
 
 
 class RifImage:
