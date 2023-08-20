@@ -13,6 +13,7 @@ with open("my_new_file", "w", encoding='utf-8') as f:
 with open("my_new_file", "r", encoding='utf-8') as f:
     print(f.read()) # prints the content
     print(f.read()) # prints nothing, why?
+    # Word of the day: idempotent (not)
     # move the cursor back to the beginning of the file
     f.seek(0)
     print(f.read()) # prints the content again
