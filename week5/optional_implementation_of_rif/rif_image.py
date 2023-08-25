@@ -6,8 +6,9 @@ from PIL import Image
 class RifImage:
     """
     RifImage is a custom image file format for educational purposes.
-    It has a 9-byte header specifying the image's dimensions followed by 
-    RGB values of the image's pixels.
+    It has a 9-byte header specifying the image's dimensions, followed by 
+    RGB values of the image's pixels. RGB values are each specified as 8-bit 
+    unsigned integers.
     """
     def __init__(self, file_path: str, is_jpeg: bool = False) -> None:
         """
