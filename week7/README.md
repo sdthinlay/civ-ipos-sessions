@@ -86,7 +86,7 @@
 
 ### Debugging Activity
 
-- **Debug a Buggy Tic-Tac-Toe**
+- **Debug a Buggy [Tic-Tac-Toe](activities/tic_tac_bug_toe.py)**
   - Work through a version of the game with intentional bugs. Identify, understand, and rectify the issues using debugging tools and techniques.
 
 ### Documentation Activity
