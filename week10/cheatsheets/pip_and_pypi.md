@@ -69,6 +69,7 @@ pip install -r requirements.txt
 
 ### Search for Packages
 > **DEPRECATED**: Use [PyPI search](www.pypi.org) instead.
+
 To search for a package called `requests` on PyPI:
 
 ```bash
