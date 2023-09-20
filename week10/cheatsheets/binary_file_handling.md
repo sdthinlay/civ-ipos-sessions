@@ -65,6 +65,14 @@ f.close()
 f.seek(5)
 pos = f.tell()  # Should return 5
 ```
+### Iterating over bytes
+If you have read _bytes_, you can then iterate over the `bytes` object. Each item in a `bytes` object is an `int` with a value 0-255 (i.e. interprets each byte as an 8-bit unsigned int).
+```python
+first_ten_bytes = f.read(10)
+for byte in first_ten_bytes:
+    print(byte) # prints a number between 0-255
+print(type(byte)) # returns int as the type
+```
 
 ### Read Structured Data
 
