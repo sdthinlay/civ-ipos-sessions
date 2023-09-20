@@ -35,7 +35,7 @@
 ## Marking Folders
 
 - **Sources Root**: Mark `src/` as the Sources Root for PyCharm to recognize it as the main codebase.
-- **Excluded Folders**: Folders like `tests/` can be excluded to prevent indexing, although not necessary.
+- **Excluded Folders**: Folders like `tests/` can be excluded to prevent indexing, although unnecessary.
 
 ## File Naming in Python
 
@@ -50,6 +50,23 @@
 3. **Underscores**: Use underscores to separate words for better readability (`test_this_function_works`).
 
 ## Summary
+```text
+MyProject/            <-- PyCharm "Project" Folder (Root Folder)
+├── .git/             <-- Git metadata and object database
+├── .idea/            <-- PyCharm settings (Add to .gitignore)
+├── .venv/            <-- Virtual environment (Add to .gitignore)
+├── src/              <-- Main code (Mark as "Sources Root" in PyCharm)
+│   ├── main.py
+│   ├── module1.py
+│   └── package1/
+│       └── module2.py
+├── tests/            <-- Test code (Mark as "Tests Root" in Pycharm)
+│   ├── test_main.py
+│   └── test_module1.py
+├── .gitignore        <-- List of files/folders to ignore in git
+├── README.md         <-- Project description
+└── requirements.txt  <-- List of project dependencies (use pip freeze > requirements.txt to create)
+```
 
 - Identify your root folder as the top-level container of your project.
 - Understand folder roles (`src/`, `tests/`, `.idea/`, `.venv/`, `.git/`) and how to mark them in PyCharm.
