@@ -98,5 +98,6 @@
 
 - Immutable objects are effectively passed by value.
 - Mutable objects are effectively passed by reference.
-- Functions can modify mutable arguments but create new instances for immutable arguments.
+- But both types are in practice "pass-by-object-reference" - that is the parameter passing mechanism is identical.
+- Because functions can modify mutable arguments but must create new instances for immutable arguments (which are only referenced by local names unless a global keyword is used).
   
