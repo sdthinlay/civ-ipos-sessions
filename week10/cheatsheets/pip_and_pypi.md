@@ -15,7 +15,7 @@
 | List Packages             | List installed packages                                   | `pip list`                                         |
 | Freeze Requirements       | Generate a list of installed packages                     | `pip freeze > requirements.txt`                    |
 | Install from Requirements | Install packages from a `requirements.txt` file           | `pip install -r requirements.txt`                  |
-| Search Packages           | Search for packages in PyPI                               | `pip search package_name`                          |
+
 
 ## Examples
 
@@ -68,7 +68,7 @@ pip install -r requirements.txt
 ```
 
 ### Search for Packages
-
+> **DEPRECATED**: Use [PyPI search](www.pypi.org) instead.
 To search for a package called `requests` on PyPI:
 
 ```bash
