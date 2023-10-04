@@ -28,21 +28,24 @@ Name at least three projects that you use regularly that are open source.
 ### Individual Motivations
 
 - Learning and Skill Development
-- Community Engagement
+- Community Engagement/Ideals
 - Portfolio Building
+- Paid to contribute (see organisational)
 
 ### Organizational Motivations
 
 - Cost Efficiency
 - Security
 - Innovation and Collaboration
+- Community outreach/positive press
+- Standalone value
 
 ### Group Activity
 
 - Divide into groups of 3-4 students.
 - Discuss the pros and cons of using open source for different types of organisations (small startups vs. large enterprises).
   - Make sure you consider the **cons** as well as the **pros**.
-- 5-minute presentation by each group.
+- 3-minute presentation by each group.
 
 ---
 
@@ -82,9 +85,12 @@ Name at least three projects that you use regularly that are open source.
   - Groups of 3-4 students.
   - Task: Find an open-source project relevant to your interests.
   - Criteria for evaluation:
-    1. Number of stars/forks on GitHub/GitLab.
-    2. Frequency of commits.
-    3. Community engagement (issue tracker, forums).
+    1. Number of stars/forks on GitHub/GitLab
+    2. Frequency of commits
+    3. Number of committers
+    4. Community engagement (issue tracker, forums)
+    5. Type of license
+    6. Likely motivation for the project (commercial/ethical/passion/etc)
   - Prepare a 5-minute presentation on the project.
 
 ---
